@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include 'seo/tracking/googleanalytics.njk' %}
+    {% include 'seo/metatags.njk' %}
+    {% block extra_css %}{% endblock %}
+    <link rel="stylesheet" href="/css/{{ projectFilesName }}.libs.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link runat="server" rel="shortcut icon" href="/img/favicon/" type="image/x-icon"/>
+    <link runat="server" rel="icon" href="/img/favicon/" type="image/ico"/>
+    <title>{% block title %}{% endblock %} | Site</title>
+    {% include 'seo/tracking/facebookpixel.njk' %}
+  </head>
+  <body>
+    <div id="page">
+      <main>
+        {% block content %}{% endblock %}
+      </main>
+    </div>
+    {% block js_libs_config %}
+    {% endblock %}
+    <script src="/js/{{ projectFilesName }}.libs.js"></script>
+    {% block js_project_config %}
+    {% endblock %}
+    <script src="/js/{{ projectFilesName }}.js"></script>
+    {% block js_inline %}
+    {% endblock %}
+  </body>
+</html>

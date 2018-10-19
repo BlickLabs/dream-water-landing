@@ -1,0 +1,30 @@
+{% extends "partials/base.njk" %}
+
+{% block title %}This{% endblock %}
+
+{% set meta_description = "" %}
+{% set og_url = "" %}
+{% set og_title = "" %}
+{% set og_description = "" %}
+{% set og_img = "" %}
+{% set og_img_width = "" %}
+{% set og_img_height = "" %}
+
+{% set view_name = "homepage" %}
+
+{% block content %}
+<section class="home">
+  <section class="home-info">
+    <h1 class="home-info-title iagp-demi">Welcome to</h1>
+    <img class="home-info-logo" src="/img/logo-dreamwater.png">
+    <h2 class="home-info-subtitle iagp-demi">Please select your location</h2>
+    <div class="btn-container">
+      <a class="btn iagp-demi" href="">USA and International</a>
+      <a class="btn iagp-demi" href="">Canada</a>
+    </div>
+    <img class="home-bottle-mobile" src="/img/botella-dreamwater.png">
+    <a class="home-info-email iagp-md" href="mailto:customerservice@drinkdreamwater.com">customerservice@drinkdreamwater.com</a>
+  </section>
+  <img class="home-bottle" src="/img/botella-dreamwater.png">
+</section>
+{% endblock %}

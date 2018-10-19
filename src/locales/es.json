@@ -1,0 +1,31 @@
+{
+  "es": {
+    "nav": {
+      "logo": "/img/logos/change-this.png",
+      "logoAlt": "Logo del sitio dentro de la barra de navegación",
+      "hamburgerLogoAlt": "Logo del sitio dentro del menu hamburguesa",
+      "hamburgerCloseAlt": "Ícono en forma de X para cerrar el menu hamburguesa",
+      "sections": [
+        {
+          "name": "Inicio",
+          "link": "index.html",
+          "viewName": "homepage"
+        }
+      ]
+    },
+    "home": {
+      "title": "Título de prueba"
+    },
+    "footer": {
+      "logo": "/img/logos/logo-footer.png",
+      "logoAlt": "Logo del sitio dentro del pie de página",
+      "sections": [
+        {
+          "name": "Inicio",
+          "link": "index.html",
+          "viewName": "homepage"
+        }
+      ]
+    }
+  }
+}

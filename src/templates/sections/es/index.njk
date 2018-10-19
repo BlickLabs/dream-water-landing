@@ -1,0 +1,21 @@
+{% extends "partials/base.njk" %}
+
+{% block title %}This{% endblock %}
+
+{% set meta_description = "" %}
+{% set og_url = "" %}
+{% set og_title = "" %}
+{% set og_description = "" %}
+{% set og_img = "" %}
+{% set og_img_width = "" %}
+{% set og_img_height = "" %}
+
+{% set view_name = "homepage" %}
+
+{% block content %}
+<section class="home">
+  <section class="home-cover">
+    <h1>{{es.home.title}}</h1>
+  </section>
+</section>
+{% endblock %}

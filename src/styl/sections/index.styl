@@ -1,0 +1,129 @@
+.home
+  display flex
+  flex-direction row
+  justify-content flex-end
+  padding 129px 0 119px 0
+
+  &-info
+    align-items center
+    display flex
+    flex-direction column
+    margin-right -70px
+
+    &-title
+      color #ffffff
+      font-size 52px
+      letter-spacing 0.2px
+
+    &-logo
+      height 104px
+      margin 32px 0 125px 0
+      width 192px
+
+    &-subtitle
+      color #ffffff
+      font-size 43px
+      letter-spacing 0.2px
+
+    &-email
+      border-top solid 1px #ffffff
+      color #ffffff
+      font-size 22px
+      letter-spacing 0.1px
+      padding 21px 0 0 0
+      text-align center
+      width 579px
+
+  &-bottle
+    height auto
+    width 536px
+
+    &-mobile
+      display none
+
+.btn
+  align-items center
+  background-color #c866cd
+  border-radius 100px
+  color #ffffff
+  display flex
+  font-size 22px
+  justify-content center
+  height 54px
+  transition 0.3s
+
+  &:hover
+    background-color #be84b9
+    transition 0.3s
+
+  &-container
+    display flex
+    flex-direction row
+    margin 47px 0 285px 0
+
+    & .btn:nth-child(1)
+      margin-right 70px
+      width 300px
+
+    & .btn:nth-child(2)
+      width 230px
+
+@media screen and (min-width 1366px)
+  .home
+    justify-content space-between
+
+    &-info
+      margin 0 0 0 10%
+
+@media screen and (max-width 1130px)
+  .home
+    flex-direction column
+
+    &-info
+      margin-right 0
+
+@media screen and (max-width 660px)
+  .home
+    padding-top 65px
+    position relative
+
+    &-info
+      &-title
+        font-size 42px
+
+      &-logo
+        height 78px
+        width 144px
+
+      &-subtitle
+        font-size 30px
+        text-align center
+
+      &-email
+        font-size 14px
+        width 295px
+
+    &-bottle
+      display none
+
+      &-mobile
+        display block
+        max-width 536px
+        width 100%
+
+  .btn
+    font-size 15px
+    height 40px
+
+    &-container
+      align-items center
+      flex-direction column
+      margin-bottom 0
+      z-index 2
+
+      & .btn:nth-child(1)
+        margin 0 0 30px 0
+        width 205px
+
+      & .btn:nth-child(2)
+        width 140px
